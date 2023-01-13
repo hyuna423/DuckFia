@@ -1,18 +1,98 @@
-
 /*데탑*/
 @media screen and (max-width:1440px) {
+
+  /* economy */
+
+  #economy .economy_area .eco_box_area .eco_box {
+    padding: 30px 20px
+  }
+
+  /* mafia */
+  #mafia .mafia_area .maf_txt p {
+    width: 100%;
+  }
+
 }
-
-
 
 /*노트북*/
-  @media screen and (max-width:1024px) {
+@media screen and (max-width:1024px) {
+
+  /* project */
+  #project::after {
+    width: 400px;
+    height: 100%;
+    background-size: contain;
+    left: 0;
+  }
+
+  /* economy */
+
+  #economy::after {
+    width: 54%;
+    height: 66%;
+  }
+
+  #economy .economy_area .eco_box_area .eco_box h5 {
+    font-size: 1rem;
+  }
+
+  #economy .economy_area .eco_box_area .eco_box {
+    padding: 30px 15px;
+  }
+
+  /* mafia */
+  #mafia .mafia_area .maf_txt p br {
+    display: none;
+  }
+
+  #mafia .mafia_area .mafia_box .ma_box.flip {
+    width: 30%;
+  }
+
+  #mafia .mafia_area .mafia_box .box_bottom .ma_box {
+    width: 41%;
+  }
 }
 
 
 
-  /*아이패드 (768px)*/
-  @media screen and (max-width:991px) {
+/*아이패드 (768px)*/
+@media screen and (max-width:991px) {
+
+  /* project */
+  #project .project_area p:nth-child(3) br {
+    display: none;
+  }
+
+  /* economy */
+  #economy .economy_area .eco_box_area {
+    flex-wrap: wrap;
+  }
+
+  #economy .economy_area .eco_box_area .eco_box {
+    width: 45%;
+  }
+
+  #economy .economy_area .eco_box_area .eco_box:nth-child(1),
+  #economy .economy_area .eco_box_area .eco_box:nth-child(2) {
+    margin-bottom: 8%;
+  }
+
+  /* mafia */
+  #mafia .mafia_area .mafia_box .ma_box.flip .ma_box_card .back {
+    padding: 18px;}
+
+    #mafia .mafia_area .mafia_box .ma_box.flip .ma_box_card .back p br{
+      display: none;
+    }
+  #mafia .mafia_area .mafia_box .box_bottom .ma_box {
+    width: 30.5%;
+  }
+
+  #mafia::before {
+    width: 100%;
+    height: 77%;
+  }
 }
 
 
@@ -21,27 +101,110 @@
 
 @media screen and (max-width:767px) {
 
-}
+  /* project */
+  #project .project_area p br {
+    display: none;
+  }
 
+  /* economy */
+  #economy::before {
+    height: 30%;
+  }
+
+
+  #economy::after {
+    width: 65%;
+    height: 86%;
+  }
+
+  /* mafia */
+  #mafia .mafia_area .mafia_box .box_bottom .ma_box {
+    width: 30%;
+  }
+
+}
 
 /*모바일2*/
 
 
 @media screen and (max-width:576px) {
 
+  /* project */
+  #project .project_area p {
+    width: 90%;
+    margin: 0 auto 5%;
+  }
+
+  #project::after {
+    width: 200px;
+  }
+
+  /* economy */
+  #economy .economy_area .eco_box_area .eco_box:nth-child(3){
+    margin-bottom: 8%;
+  }
+  #economy .economy_area .eco_box_area .eco_box {
+    width: 90%;
+
+  }
+
+  #economy .economy_area .eco_box_area {
+    justify-content: center;
+  }
+
+  #economy::after {
+    width: 95%;
+    height: 100%;
+}
+
+/* mafia */
+#mafia::after {
+  width: 71%;}
+
+#mafia .mafia_area .maf_txt p {
+  width: 90%;
+}
+
+#mafia::before {
+  width: 100%;
+  height: 57%;
+}
+
+#mafia .mafia_area .mafia_box .box_top, #mafia .mafia_area .mafia_box .box_bottom{
+  flex-wrap: wrap;
+}
+
+#mafia .mafia_area .mafia_box .box_bottom {
+  margin-top: 0;
+}
+
+#mafia .mafia_area .mafia_box .ma_box.flip .ma_box_card .back p {
+  font-size: 1.5rem;
 }
 
 
+#mafia .mafia_area .mafia_box .box_bottom .ma_box.flip:nth-child(1) {
+  margin-right: 0;
+}
 
-/*모바일3 갤럭시*/
+#mafia .mafia_area .mafia_box .box_top .flip:nth-child(2) {
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
 
-  @media screen and (max-width:425px) {
+#mafia .mafia_area .mafia_box .ma_box.flip {
+  width: 90%;
+  margin-bottom: 5%;
 
 }
 
-
-
-/*모바일4 아이폰*/
-    @media screen and (max-width:375px) {
-
 }
+
+  /*모바일3 갤럭시*/
+
+  @media screen and (max-width:425px) {}
+
+
+
+  /*모바일4 아이폰*/
+  @media screen and (max-width:375px) {}
