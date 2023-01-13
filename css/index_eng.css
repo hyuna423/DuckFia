@@ -1,34 +1,80 @@
-*{margin:0; padding:0; box-sizing:border-box;}
-    a{text-decoration : none;}
-    address{font-style:normal;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+/* economy */
+#economy .economy_area .eco_box_area .eco_box:nth-child(2) h5,
+#economy .economy_area .eco_box_area .eco_box:nth-child(3) h5,
+#economy .economy_area .eco_box_area .eco_box:nth-child(4) h5 {
+  margin-bottom: 67px;
+}
+
+/* mafia */
+
+#mafia .mafia_area .maf_txt p {
+  width: 100%;
+}
 
 
 
-
-    
 /*데탑*/
 @media screen and (max-width:1440px) {
+
+  #economy .economy_area .eco_box_area .eco_box:nth-child(2) h5,
+  #economy .economy_area .eco_box_area .eco_box:nth-child(3) h5,
+  #economy .economy_area .eco_box_area .eco_box:nth-child(4) h5 {
+    margin-bottom: 89px;
+  }
+
+  #mafia .mafia_area .maf_txt p {
+    width: 62%;
+  }
+
 }
 
 
 
 /*노트북*/
-  @media screen and (max-width:1024px) {
+@media screen and (max-width:1024px) {
+
+  #economy .economy_area .eco_box_area .eco_box:nth-child(2) h5,
+  #economy .economy_area .eco_box_area .eco_box:nth-child(3) h5,
+  #economy .economy_area .eco_box_area .eco_box:nth-child(4) h5 {
+    margin-bottom: 79px;
+  }
+
+  #mafia .mafia_area .maf_txt p {
+    width: 100%;
+  }
 }
 
 
 
-  /*아이패드 (768px)*/
-  @media screen and (max-width:991px) {
+/*아이패드 (768px)*/
+@media screen and (max-width:991px) {
+
+  #economy .economy_area .eco_box_area .eco_box:nth-child(2) h5,
+  #economy .economy_area .eco_box_area .eco_box:nth-child(3) h5,
+  #economy .economy_area .eco_box_area .eco_box:nth-child(4) h5 {
+    margin-bottom: 59px;
+  }
 }
 
 
 
 /*모바일*/
 
-@media screen and (max-width:767px) {
-
-}
+@media screen and (max-width:767px) {}
 
 
 /*모바일2*/
@@ -36,19 +82,20 @@
 
 @media screen and (max-width:576px) {
 
+  #economy .economy_area .eco_box_area .eco_box:nth-child(2) h5,
+  #economy .economy_area .eco_box_area .eco_box:nth-child(3) h5,
+  #economy .economy_area .eco_box_area .eco_box:nth-child(4) h5 {
+    margin-bottom: 20px;
+  }
 }
 
 
 
 /*모바일3 갤럭시*/
 
-  @media screen and (max-width:425px) {
-
-}
+@media screen and (max-width:425px) {}
 
 
 
 /*모바일4 아이폰*/
-    @media screen and (max-width:375px) {
-
-}
+@media screen and (max-width:375px) {}

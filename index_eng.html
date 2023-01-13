@@ -6,7 +6,7 @@
   <title>DcukFia|덕피아</title>
 
   <!--meta-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="le=edge">
 
   <!--bootstrap-->
@@ -35,76 +35,235 @@
 
 
 <body>
+  <div class="rain front-row"></div>
+  <div class="rain back-row"></div>
+
+  <script>
+    var makeItRain = function () {
+      //clear out everything
+      $('.rain').empty();
+
+      var increment = 0;
+      var drops = "";
+      var backDrops = "";
+
+      while (increment < 100) {
+        //couple random numbers to use for various randomizations
+        //random number between 98 and 1
+        var randoHundo = (Math.floor(Math.random() * (98 - 1 + 1) + 1));
+        //random number between 5 and 2
+        var randoFiver = (Math.floor(Math.random() * (5 - 2 + 1) + 2));
+        //increment
+        increment += randoFiver;
+        //add in a new raindrop with various randomizations to certain CSS properties
+        drops += '<div class="drop" style="left: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
+        backDrops += '<div class="drop" style="right: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
+      }
+
+      $('.rain.front-row').append(drops);
+      $('.rain.back-row').append(backDrops);
+    }
+
+    $('.splat-toggle.toggle').on('click', function () {
+      $('body').toggleClass('splat-toggle');
+      $('.splat-toggle.toggle').toggleClass('active');
+      makeItRain();
+    });
+
+    $('.back-row-toggle.toggle').on('click', function () {
+      $('body').toggleClass('back-row-toggle');
+      $('.back-row-toggle.toggle').toggleClass('active');
+      makeItRain();
+    });
+
+    $('.single-toggle.toggle').on('click', function () {
+      $('body').toggleClass('single-toggle');
+      $('.single-toggle.toggle').toggleClass('active');
+      makeItRain();
+    });
+
+    makeItRain();
+  </script>
 
 
   <!-- 🟡h3 빨강은 span으로 해주세요🟡-->
-
-  <header>
-
-    <div class="">
-
-      <hgroup>
-
-        <h1><img src="img/" alt="logo"></h1>
-
-      </hgroup>
-
-
-      <nav class="">
-        <ul>
-
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-
-        </ul>
-      </nav>
-
-
-      <!--반응형-->
-
-      <div class="">
-
-        <img src="img/" alt="menu_button">
-
-      </div>
-
-      <nav class="">
-
-        <ul>
-
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-
-        </ul>
-
-      </nav>
-
-      <!--반응형 js-->
-      <script type="text/javascript">
-        $(function () {
-          $("").click(function () {
-            $("").animate({ width: "toggle" }, 250);
-          });
-        });
-
-      </script>
-
-    </div>
-
-  </header>
 
   <main>
-    
-  <!-- 🟡h3 빨강은 span으로 해주세요🟡-->
+    <!-- 🟡h3 빨강은 h3>span으로 해주세요🟡-->
+    <!-- project -->
+    <section id="project">
+      <div class="project_area container">
+        <h3><span>DFA</span> Projects</h3>
+        <p>The DFA project is a project that changes the ecosystem of the culture/art industry into a transparent and
+          fair structure, and allows each participant to balance fair opportunities and profits.<br>
+        </p>
+        <p>
+          In addition, in the cultural/art market that requires a variety of users, stakeholders such as creators,
+          publishers, producers, investors, and planners can pursue transparent transactions and fair profits for
+          industrial development, so that each user's creations can be transferred to the blockchain system. We will
+          make the token economy and governance within.
+        </p>
+      </div>
+      </div>
+    </section>
+
+
+    <!-- economy -->
+    <section id="economy">
+      <div class="economy_area container">
+        <h3><span>Economy</span></h3>
+        <h4>Main Service</h4>
+        <div class="eco_box_area">
+
+          <div class="eco_box">
+            <h5>Space for issuing NFT contents <br>(including promotion and trading functions)
+            </h5>
+            <p>
+              First, as a publishing space for NFT contents, Mafia supports the issuance of various forms of NFTs such
+              as photos, videos, and sound sources.
+              In issuing a separate NFT for Mafia members or purchasing NFTs, preferential treatment such as discounts
+              or priorities for quick purchase is granted, unlike other Mafia members or citizens who have not joined
+              the Mafia. Information on this is given priority to the Mafia.
+
+            </p>
+          </div>
+
+          <div class="eco_box">
+            <h5>NFT Character Contest
+            </h5>
+            <p>
+              Secondly, it can be used as an NFT character contest space.
+
+              In addition to simply appreciating your NFT characters, you can participate in a contest with various
+              second-processed creations based on NFT characters, and through the results of the contest, DPA tokens can
+              be paid as rewards and NFT content issuance based on those creations can be supported at the platform
+              level.
+
+            </p>
+          </div>
+
+          <div class="eco_box">
+            <h5>Sweepstakes event
+            </h5>
+            <p>
+              Third, Mafia can be used as a giveaway and airdrop event space.
+
+              Targeting a mafia with a lot of activity, only members of the mafia can participate in the event through
+              an event held as an event, and through this event, you can get various rewards such as prizes or airdrops
+              of DPA tokens.
+
+            </p>
+          </div>
+
+          <div class="eco_box">
+            <h5>Streaming services
+            </h5>
+            <p>
+              Finally, free/paid streaming service space.
+
+              It will provide a space to support communication between celebrities and mafias through real-time video
+              chat, and in particular, celebrities will provide free and paid services such as live performances through
+              the DuckFia platform or partnership with the mafia itself with a large fandom. In addition, as an OTT
+              service, various education, lecture videos, and videos suitable for the interests of the mafia will be
+              quickly and conveniently available on the mafia.
+
+
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <section id="mafia">
+      <div class="mafia_area container">
+        <div class="maf_txt">
+          <h3><span>MAFIA</span>Rating</h3>
+          <p>In the DuckFia platform, there are a total of 5 classes: Godfather, Consigliere, Caporegim, Soldato, which
+            correspond to the administrator level, and ordinary citizens who do not own cards.
+          </p>
+          <p>
+            Classes are divided according to the number and type of NFT character cards, and areas and roles that can be
+            active on the platform are divided according to each class.
+          </p>
+        </div>
+
+        <div class="mafia_box">
+
+          <div class="box_top">
+            <div class="ma_box flip">
+              <div class="ma_box_card">
+                <div class="front">
+                  <img src="img/GF.png" alt="god father">
+                </div>
+                <div class="back">
+                  <p> 1 4-star + 1 3-star + 2 2-star + 2 1-star
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ma_box flip">
+              <div class="ma_box_card">
+                <div class="front">
+                  <img src="img/CS.png" alt="Consigliere">
+                </div>
+                <div class="back">
+                  <p> 1 3-star + 2 2-star + 2 1-star
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ma_box flip">
+              <div class="ma_box_card">
+                <div class="front">
+                  <img src="img/CG.png" alt="Capregime">
+                </div>
+                <div class="back">
+                  <p> 2 2-star + 2 1-star
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box_bottom">
+            <div class="ma_box flip">
+              <div class="ma_box_card">
+                <div class="front">
+                  <img src="img/ST.png" alt="Soldato">
+
+                </div>
+                <div class="back">
+                  <p>1 2-star rating + 2 1-star ratings
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ma_box flip">
+              <div class="ma_box_card">
+                <div class="front">
+                  <img src="img/CZ.png" alt="Citizen">
+                </div>
+                <div class="back">
+                  <p>2성 등급 1장 + 보유 <br>
+                    1성 등급 2장</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
   </main>
-  
+
   <footer>
 
   </footer>

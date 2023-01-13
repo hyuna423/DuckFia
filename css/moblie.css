@@ -27,13 +27,14 @@
 
   #project::before {
     height: 38%;
-    left: 70%;}
+    left: 70%;
+  }
 
   /* economy */
 
-  #economy::after {
-    width: 54%;
-    height: 66%;
+  #economy::before {
+    width: 80%;
+    height: 100%;
   }
 
   #economy .economy_area .eco_box_area .eco_box h5 {
@@ -41,7 +42,18 @@
   }
 
   #economy .economy_area .eco_box_area .eco_box {
-    padding: 30px 15px;
+    width: 48%;
+  }
+
+  #economy .economy_area .eco_box_area .eco_box:nth-child(2) h5,
+  #economy .economy_area .eco_box_area .eco_box:nth-child(3) h5,
+  #economy .economy_area .eco_box_area .eco_box:nth-child(4) h5 {
+    margin-bottom: 40px;
+  }
+
+  #economy .economy_area .eco_box_area .eco_box:nth-child(1),
+  #economy .economy_area .eco_box_area .eco_box:nth-child(2) {
+    margin-bottom: 4%;
   }
 
   /* mafia */
@@ -69,6 +81,11 @@
   }
 
   /* economy */
+  #economy .economy_area::before {
+
+    height: 30%;
+  }
+
   #economy .economy_area .eco_box_area {
     flex-wrap: wrap;
   }
@@ -84,11 +101,13 @@
 
   /* mafia */
   #mafia .mafia_area .mafia_box .ma_box.flip .ma_box_card .back {
-    padding: 18px;}
+    padding: 18px;
+  }
 
-    #mafia .mafia_area .mafia_box .ma_box.flip .ma_box_card .back p br{
-      display: none;
-    }
+  #mafia .mafia_area .mafia_box .ma_box.flip .ma_box_card .back p br {
+    display: none;
+  }
+
   #mafia .mafia_area .mafia_box .box_bottom .ma_box {
     width: 30.5%;
   }
@@ -111,16 +130,9 @@
   }
 
   /* economy */
-  #economy::before {
-    height: 18%;
+  #economy .economy_area::before {
+    height: 20%;
 }
-
-
-  #economy::after {
-    width: 65%;
-    height: 86%;
-  }
-
   /* mafia */
   #mafia .mafia_area .mafia_box .box_bottom .ma_box {
     width: 30%;
@@ -145,12 +157,14 @@
 
   #project::before {
     height: 20%;
-    left: 50%;}
+    left: 50%;
+  }
 
   /* economy */
-  #economy .economy_area .eco_box_area .eco_box:nth-child(3){
+  #economy .economy_area .eco_box_area .eco_box:nth-child(3) {
     margin-bottom: 8%;
   }
+
   #economy .economy_area .eco_box_area .eco_box {
     width: 90%;
 
@@ -160,59 +174,61 @@
     justify-content: center;
   }
 
-  #economy::after {
+  #economy::before {
     width: 95%;
     height: 100%;
+  }
+
+  /* mafia */
+  #mafia::after {
+    width: 71%;
+  }
+
+  #mafia .mafia_area .maf_txt p {
+    width: 90%;
+  }
+
+  #mafia::before {
+    width: 100%;
+    height: 57%;
+  }
+
+  #mafia .mafia_area .mafia_box .box_top,
+  #mafia .mafia_area .mafia_box .box_bottom {
+    flex-wrap: wrap;
+  }
+
+  #mafia .mafia_area .mafia_box .box_bottom {
+    margin-top: 0;
+  }
+
+  #mafia .mafia_area .mafia_box .ma_box.flip .ma_box_card .back p {
+    font-size: 1.5rem;
+  }
+
+
+  #mafia .mafia_area .mafia_box .box_bottom .ma_box.flip:nth-child(1) {
+    margin-right: 0;
+  }
+
+  #mafia .mafia_area .mafia_box .box_top .flip:nth-child(2) {
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+
+  #mafia .mafia_area .mafia_box .ma_box.flip {
+    width: 90%;
+    margin-bottom: 5%;
+
+  }
+
 }
 
-/* mafia */
-#mafia::after {
-  width: 71%;}
+/*모바일3 갤럭시*/
 
-#mafia .mafia_area .maf_txt p {
-  width: 90%;
-}
-
-#mafia::before {
-  width: 100%;
-  height: 57%;
-}
-
-#mafia .mafia_area .mafia_box .box_top, #mafia .mafia_area .mafia_box .box_bottom{
-  flex-wrap: wrap;
-}
-
-#mafia .mafia_area .mafia_box .box_bottom {
-  margin-top: 0;
-}
-
-#mafia .mafia_area .mafia_box .ma_box.flip .ma_box_card .back p {
-  font-size: 1.5rem;
-}
-
-
-#mafia .mafia_area .mafia_box .box_bottom .ma_box.flip:nth-child(1) {
-  margin-right: 0;
-}
-
-#mafia .mafia_area .mafia_box .box_top .flip:nth-child(2) {
-  margin: 0 auto;
-  margin-bottom: 5%;
-}
-
-#mafia .mafia_area .mafia_box .ma_box.flip {
-  width: 90%;
-  margin-bottom: 5%;
-
-}
-
-}
-
-  /*모바일3 갤럭시*/
-
-  @media screen and (max-width:425px) {}
+@media screen and (max-width:425px) {}
 
 
 
-  /*모바일4 아이폰*/
-  @media screen and (max-width:375px) {}
+/*모바일4 아이폰*/
+@media screen and (max-width:375px) {}
