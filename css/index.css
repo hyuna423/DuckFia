@@ -34,4 +34,301 @@ body{
 
 
 
-/*헤더*/
+/*nftcard*/
+
+#nftcard{
+  width: 100%;
+  background-color: #261F1D;
+  padding: 100px 0 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+#nftcard::after{
+  content: '';
+  position: absolute;
+  right: 8%;
+  top: 8%;
+  width: 500px;
+  height: 500px;
+  background: url(../img/Frame.png) no-repeat right top;
+  background-size: cover;
+  z-index: 0;
+}
+
+.nftcard_wrap{
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.nftcard_wrap h3{
+  text-align: left !important;
+}
+
+.card_text{
+  width: 100%;
+  margin-bottom: 8%;
+}
+
+.card_content{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.card_up{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_down{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_content > div > div {
+  -webkit-box-reflect: below 0.5px -webkit-gradient(linear,left top,left bottom, from(transparent),color-stop(0.8,transparent),to(black));
+  transition: all .3s;
+  width: 100%;
+}
+
+.card_content > div > div img {
+  max-width: 100%;
+}
+
+
+
+
+/*wallet*/
+
+#wallet{
+  width: 100%;
+  padding: 100px 0;
+  position: relative;
+}
+
+
+#wallet::before{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  background: url(../img/wallet_bg.png) no-repeat center center;
+  background-size: cover;
+  filter: blur(1px) sepia(0.2);
+  -webkit-filter: blur(1px) sepia(0.2);
+  z-index: 0;
+}
+
+#wallet::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 480px;
+  height: 450px;
+  background: url(../img/wallet_shape.png) no-repeat right bottom;
+  background-size: cover; 
+}
+
+.wallet_wrap {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.wallet_content{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.wallet_cont_left{
+  width: 50%;
+}
+
+
+
+
+.wallet_cont_left img{
+  max-width: 100%;
+}
+
+.wallet_cont_right{
+  width: 15%;
+}
+
+.wallet_cont_right h3{
+  text-align: left !important;
+}
+
+.wallet_btn, .wallet_btn2{
+  width: 100%;
+}
+
+.wallet_btn > button.shakeBox {
+  background-color: rgba(82,7,7,.5);
+  border: 1px solid #FF002B ;
+  width: 100%;
+  animation-duration: 1s;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg)
+    }
+  25% {
+      transform: rotate(-4deg);
+    }
+  50% {
+      transform: rotate(4deg);
+    }
+  75% {
+      transform: rotate(-4deg);
+    }
+  100% {
+      transform: rotate(0deg);
+    }
+}
+
+.wallet_btn2 > button.shakeBoxSecond {
+  background-color: rgba(82,7,7,.5);
+  border: 1px solid #FF002B ;
+  width: 100%;
+  animation-duration: 1s;
+}
+
+@keyframes shakeSecond {
+  0% {
+    transform: rotate(0deg)
+    }
+  25% {
+      transform: rotate(-4deg);
+    }
+  50% {
+      transform: rotate(4deg);
+    }
+  75% {
+      transform: rotate(-4deg);
+    }
+  100% {
+      transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+.wallet_btn > button:focus, .wallet_btn2 > button:focus{
+  outline: none;
+}
+
+.wallet_btn > button > a, .wallet_btn2 > button > a{
+  width: 100%;
+  display: inline-block;
+  padding: 8%;
+  color: #fff;
+  transition: all .5s;
+}
+
+.wallet_btn > button > a:hover, .wallet_btn2 > button > a:hover{
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 0 20px #FF002B;
+  -webkit-box-shadow: 0 0 20px #FF002B;
+}
+
+
+.wallet_btn2{
+  display: none;
+
+}
+
+
+
+/*roadmap*/
+
+#roadmap{
+  width: 100%;
+  padding: 50px 0;
+  background-color: #261F1D;
+  position: relative;
+  overflow: hidden;
+}
+
+#roadmap::after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 800px;
+  background: url(../img/roadmap_bg.png) no-repeat center bottom;
+  background-size: contain;
+  z-index: 0;
+}
+
+.roadmap_wrap {
+  width: 100%;
+}
+
+.roadmap_wrap h3{
+  position: relative;
+  z-index: 1;
+}
+
+.rdmp_content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5%;
+  position: relative;
+  z-index: 1;
+}
+
+
+.rdmp_cont_box{
+  background-color: rgba(0,0,0,.1);
+  border: 2px solid #77161C;
+  width: 25%;
+  height: 350px;
+  padding: 2%;
+  box-shadow: 0 4px 14px rgba(0,0,0,.35);
+  -webkit-box-shadow: 0 4px 14px rgba(0,0,0,.35);
+  backdrop-filter: blur(13px);
+}
+
+.box2{
+  border: 2px solid #3E3E3E;
+  margin-top: 30%;
+}
+
+.box1, .box3 {
+  margin-top: -10%;
+}
+
+
+.rdmp_content ul , .rdmp_content li {
+  list-style: none;
+}
+
+.rdmp_content ul{
+  text-align: center;
+  background-color: #C91C26;
+  border-radius: 30px;
+  width: 50px;
+  margin: 0 auto 7%;
+}
+
+.rdmp_content li {
+  margin-bottom: 5%;
+}

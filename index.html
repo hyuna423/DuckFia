@@ -36,81 +36,151 @@
 
 <body>
 
-  <!-- 🟡h3 빨강은 h3>span으로 해주세요🟡-->
-
-  <header>
-
-    <div class="">
-
-      <hgroup>
-
-        <h1><img src="img/" alt="logo"></h1>
-
-      </hgroup>
-
-
-      <nav class="">
-        <ul>
-
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-
-        </ul>
-      </nav>
-
-
-      <!--반응형-->
-
-      <div class="">
-
-        <img src="img/" alt="menu_button">
-
-      </div>
-
-      <nav class="">
-
-        <ul>
-
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-
-        </ul>
-
-      </nav>
-
-      <!--반응형 js-->
-      <script type="text/javascript">
-        $(function () {
-          $("").click(function () {
-            $("").animate({ width: "toggle" }, 250);
-          });
-        });
-
-      </script>
-
-    </div>
-
-  </header>
 
   <main>
   <!-- 🟡h3 빨강은 h3>span으로 해주세요🟡-->
 
+    <section id="nftcard">
+      <div class="nftcard_wrap container">
+        <h3><span>NFT</span>Card</h3>
+
+        <div class="card_text">
+          <p>DuckFia에서 만들어진 NFT 작품 시리즈 입니다.<br>
+            캐릭터 오픈 때 마다 각각 등급별로 종류가 늘어납니다.<br>
+             NFT 작품은 ERC-721로 발행되어, 해당 NFT를 구매한 경우<br>
+             해당 NFT를 온전히 소유할 수 있습니다.</p>
+        </div><!-- card_text -->
+
+
+        <div class="card_content">
+          <div class="card_up">
+            <div class="card1" data-aos="flip-left">
+              <img src="img/duckfia_nft1.png" alt="duckfia_nft1">
+            </div>
+            <div class="card2"data-aos="flip-left">
+              <img src="img/duckfia_nft2.png" alt="duckfia_nft2">
+            </div>
+          </div>
+         
+          <div class="card_down">
+            <div class="card3" data-aos="flip-left">
+              <img src="img/duckfia_nft3.png" alt="duckfia_nft3">
+            </div>
+            <div class="card4" data-aos="flip-left">
+              <img src="img/duckfia_nft4.png" alt="duckfia_nft4">
+            </div>
+          </div>
+        </div><!-- card_content -->
+       
+      </div><!-- nftcard_wrap -->
+    </section>
+
+
+    <section id="wallet">
+      <div class="wallet_wrap container">
+        <div class="wallet_content">
+          <div class="wallet_cont_left" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500">
+            <img src="img/wallet.png" alt="wallet">
+          </div>
+
+          <div class="wallet_cont_right">
+            <h3><span>DFA</span> Wallet</h3>
+
+            <div class="wallet_btn">
+              <button class="shakeBox"><a href=""> Look around 
+                <i class="xi-arrow-right xi-x"></i>
+              </a></button>
+            </div>
+          </div><!-- wallet_cont_right -->
+
+          
+        
+  
+        </div><!-- wallet_content -->
+
+
+        <div class="wallet_btn2">
+          <button class="shakeBoxSecond"><a href=""> Look around 
+            <i class="xi-arrow-right xi-x"></i>
+          </a></button>
+        </div>
+      </div><!-- wallet_wrap -->
+    </section>
+
+
+
+    <section id="roadmap">
+      <div class="roadmap_wrap container">
+        <h3>Road<span>map</span></h3>
+
+        <div class="rdmp_content" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+          <div class="rdmp_cont_box box1">
+            <ul>2022</ul>
+            <li>Q3 DuckFia 팀 모집 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp; 문화산업, NFT
+            </li>
+            <li>
+              Q4 DuckFia Ltd. 설립 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whitepaper 1.0 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;스마트 컨트랙트 개발 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DFA Wallet 개발 시작
+            </li>  
+          </div>
+
+
+          <div class="rdmp_cont_box box2">
+            <ul>2023</ul>
+            <li>Q1 DFA Wallet 개발 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;해외 거래소 상장 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DFA 커뮤니티 플랫폼 개발 시작 <br>
+            </li>
+            <li>
+              Q2 NFT 캐릭터 1차 오픈 예정
+            </li>  
+            <li>
+              Q3 DFA 커뮤니티 플랫폼 베타 테스트 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NFT 캐릭터 2차 오픈 예정
+            </li>  
+            <li>
+              Q4 DFA 커뮤니티 플랫폼 정식 오픈 예정 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NFT 콘텐츠 시범 운영 예정
+            </li>  
+           
+          </div>
+
+
+          <div class="rdmp_cont_box box3">
+            <ul>2024</ul>
+            <li>
+              Q1 NFT 마켓 플레이스 오픈 예정
+            </li>
+            <li>
+              Q2 DFA 프로젝트 파트너 모집 (셀럽) <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OTT 스트리밍 서비스 오픈 예정
+            </li>  
+            <li>
+              Q3 추가 콘텐츠 발행 예정
+            </li>  
+            <li>
+              Q4 메타버스로 확장 및 DFA 캐릭터 융화
+            </li>  
+           
+          </div>
+        </div><!-- rdmp_content -->
+      </div><!-- roadmap_wrap -->
+    </section>
   </main>
   
-  <footer>
 
-  </footer>
 
   <script>
     AOS.init();
   </script>
 
+<script src="js/btn.js"></script>
 
 </body>
 

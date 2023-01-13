@@ -2,32 +2,69 @@
     a{text-decoration : none;}
     address{font-style:normal;}
 
-
+    .rdmp_cont_box {
+      font-size: 0.9em;
+      padding: 2% 1.5%;
+    }
 
 
     
 /*데탑*/
 @media screen and (max-width:1440px) {
+
+  /*roadmap*/
+
+  .rdmp_content{
+    justify-content: space-between;
+  }
+
+  .rdmp_cont_box {
+    width: 32%;
+    font-size: 12px;
+  }
+
 }
+
 
 
 
 /*노트북*/
   @media screen and (max-width:1024px) {
+
+      /*roadmap*/
+
+      .rdmp_cont_box {
+        width: 30%;
+        height: 260px;
+      }
+
 }
 
 
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
+          /*roadmap*/
+
+          .rdmp_cont_box {
+            width: 40%;
+            padding: 2%;
+          }
+    
 }
+
 
 
 
 /*모바일*/
 
 @media screen and (max-width:767px) {
+   /*roadmap*/
 
+   .rdmp_cont_box {
+    width:53%;
+    padding: 2.5%;
+  }
 }
 
 
@@ -35,6 +72,12 @@
 
 
 @media screen and (max-width:576px) {
+
+
+  .rdmp_cont_box {
+    width: 80%;
+    padding: 5%;
+  }
 
 }
 
@@ -44,11 +87,21 @@
 
   @media screen and (max-width:425px) {
 
+
+    
+    
+  /*roadmap*/
+
+    
+  #roadmap::after{
+    left: -6%;
+  }
 }
 
 
 
 /*모바일4 아이폰*/
     @media screen and (max-width:375px) {
+
 
 }
