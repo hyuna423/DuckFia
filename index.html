@@ -35,50 +35,91 @@
 
 
 <body>
-
   <!-- 🟡h3 빨강은 h3>span으로 해주세요🟡-->
 
   <header>
 
-    <div class="">
+    <div class="head_all">
 
       <hgroup>
-
-        <h1><img src="img/" alt="logo"></h1>
-
+        <a href="index.html">
+          <h1><img src="img/DUCKFIA_LOGO.png" alt="logo"></h1>
+        </a>
       </hgroup>
 
 
-      <nav class="">
+      <nav class="pc_menu container">
         <ul>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <span>MAFIA</span>
+            </button>
 
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
+            <div class="dropdown-content">
+              <a href="#"><p>NFT Mint Contest Event OTT<br>
+                서비스 준비중입니다.</p></a>
+            </div>
+          </div>
 
+          <div class="menu_icon">
+            <!-- 링크 -->
+            <div class="dropdown2">
+              <button class="dropbtn2">
+                <i class="xi-link-insert xi-2x"></i>
+              </button>
+
+              <div class="dropdown2-content">
+                <a href="#">Telegram</a>
+                <a href="#">KaKaoTalk</a>
+                <a href="#">Mail</a>
+              </div>
+            </div>
+
+            <!-- 언어 -->
+            <div class="dropdown2">
+              <button class="dropbtn2">
+                <i class="xi-globus xi-2x"></i>
+              </button>
+
+              <div class="dropdown2-content">
+                <a href="index.html">Kor</a>
+                <a href="index_eng.html">Eng</a>
+              </div>
+            </div>
+
+          </div>
         </ul>
       </nav>
 
 
-      <!--반응형-->
+      <!-- 헤더 햄버거메뉴 -->
 
-      <div class="">
+      <div class="m_menu_button">
 
-        <img src="img/" alt="menu_button">
+        <i class="xi-bars xi-3x"></i>
 
       </div>
 
-      <nav class="">
+      <nav class="m_menu">
 
         <ul>
 
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
+          <li><a href="#DFAproject" class="scroll">DFA project</a></li>
+          <li><a href="#economy" class="scroll">Economy</a></li>
+          <li><a href="#NFTcard" class="scroll">NFT Card</a></li>
+          <li><a href="#DFAwallet" class="scroll">DFA Wallet</a></li>
+          <li><a href="#roadmap" class="scroll">RoadMap</a></li>
+
+          <!-- 모바일에서 나오는 항목들 -->
+          <li><a href="" class="scroll">MAFIA</a></li>
+
+          <li class="lang">
+            <a href=""><i class="xi-telegram xi-1x"></i></a>
+            <a href=""><i class="xi-kakaotalk xi-1x"></i></a>
+            <a href=""><i class="xi-mail xi-1x"></i></a>
+            <a href=""><i class="xi-paper xi-1x"></i></a>
+            <a href="index_eng.html"><i class="xi-globus xi-1x"></i></a>
+          </li>
 
         </ul>
 
@@ -87,8 +128,8 @@
       <!--반응형 js-->
       <script type="text/javascript">
         $(function () {
-          $("").click(function () {
-            $("").animate({ width: "toggle" }, 250);
+          $(".m_menu_button").click(function () {
+            $(".m_menu").animate({ height: "toggle" }, 250);
           });
         });
 
@@ -101,15 +142,54 @@
   <main>
   <!-- 🟡h3 빨강은 h3>span으로 해주세요🟡-->
 
+  <!-- home 시작 -->
+  <section id="home">
+    <div class="home_wrap container">
+      <div class="home_txt">
+        <p>세계적으로 문화, 예술 산업이 극도로 발전한 시대<br>
+          세계미래의 문화중심을 이끌기 위해 하나둘씩 사람들이 모였고,</p>
+        <h3>어디에도 속하지 않지만 모든 것에 존재하는 그룹<br>
+          <span>MAFIA</span> 가 탄생했다.</h3>
+      </div>
+    </div>
+  </section><!-- home 끝 -->
+
   </main>
   
   <footer>
+    <div class="f_wrap container">
+      <div class="f_ct">
+        <h2> <a href="index.html"><img src="./img/footer_logo.svg" alt="footer logo"></a></h2>
 
+        <div class="f_info">
+          <ul>
+            <li><b>대표이사</b> xxx</li>
+            <li><b>서울시 강남구</b> xxxxxxx</li>
+            <li><b>고객센터</b> AM 9:00 – PM 6:00</li>
+            <li><b>파트너십 및 제휴 문의</b></li>
+          </ul>
+        </div>
+
+        <div class="f_com">
+          <div class="sns_btn">
+          <p><a href=""><i class="xi-telegram xi-3x"></i></a></p>
+          <p><a href=""><i class="xi-kakaotalk xi-3x"></i></a></p>
+          <p><a href=""><i class="xi-mail xi-3x"></i></a></p>
+          <p><a href=""><i class="xi-paper xi-3x"></i></a></p>
+          </div>
+        </div>
+      </div>
+
+      <p class="warning">DuckFia Ltd.는 코인발행, 플랫폼 개발 및 운영, NFT 개발 ,거래소 상장 추진 및 관리에 관한 업무를 진행하고 있습니다.</p>
+    </div>
   </footer>
+
 
   <script>
     AOS.init();
-  </script>
+    </script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="./js/rain.js"></script>
 
 
 </body>
