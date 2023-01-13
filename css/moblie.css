@@ -20,10 +20,14 @@
   /* project */
   #project::after {
     width: 400px;
-    height: 100%;
+    height: 74%;
     background-size: contain;
     left: 0;
   }
+
+  #project::before {
+    height: 38%;
+    left: 70%;}
 
   /* economy */
 
@@ -108,8 +112,8 @@
 
   /* economy */
   #economy::before {
-    height: 30%;
-  }
+    height: 18%;
+}
 
 
   #economy::after {
@@ -138,6 +142,10 @@
   #project::after {
     width: 200px;
   }
+
+  #project::before {
+    height: 20%;
+    left: 50%;}
 
   /* economy */
   #economy .economy_area .eco_box_area .eco_box:nth-child(3){
