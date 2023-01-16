@@ -124,6 +124,7 @@ body{
   filter: blur(1px) sepia(0.2);
   -webkit-filter: blur(1px) sepia(0.2);
   z-index: 0;
+  background-attachment: fixed;
 }
 
 #wallet::after{
