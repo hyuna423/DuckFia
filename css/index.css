@@ -44,7 +44,7 @@ body {
 }
 
 .rain.back-row {
-  display: none;
+  display: block;
   z-index: 1;
   bottom: 60px;
   opacity: 0.5;
@@ -521,6 +521,7 @@ hgroup h1 img {
 #project {
   text-align: center;
   position: relative;
+  z-index: 1;
 }
 
 #project::after {
@@ -749,6 +750,7 @@ hgroup h1 img {
 #economy .economy_area {
   padding: 100px 0;
   position: relative;
+  z-index: 1;
 }
 
 #economy .economy_area::before {
@@ -1009,6 +1011,7 @@ hgroup h1 img {
 #mafia .mafia_area {
   padding: 100px 0;
   position: relative;
+  z-index: 1;
 }
 
 #mafia .mafia_area .maf_txt p {
@@ -1603,10 +1606,14 @@ footer {
   width: 100%;
   height: auto;
   padding: 3% 0;
+  background-color: #181818;
+
 }
 
 footer .f_wrap {
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 footer .f_wrap .f_ct {
