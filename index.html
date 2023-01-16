@@ -94,10 +94,10 @@
 
       <!-- 헤더 햄버거메뉴 -->
 
-      <div class="m_menu_button">
-
-        <i class="xi-bars xi-3x"></i>
-
+      <div class="m_menu_button" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
 
       <nav class="m_menu">
@@ -111,15 +111,17 @@
           <li><a href="#roadmap" class="scroll">RoadMap</a></li>
 
           <!-- 모바일에서 나오는 항목들 -->
-          <li><a href="" class="scroll">MAFIA</a></li>
-
-          <li class="lang">
-            <a href=""><i class="xi-telegram xi-1x"></i></a>
-            <a href=""><i class="xi-kakaotalk xi-1x"></i></a>
-            <a href=""><i class="xi-mail xi-1x"></i></a>
-            <a href=""><i class="xi-paper xi-1x"></i></a>
-            <a href="index_eng.html"><i class="xi-globus xi-1x"></i></a>
-          </li>
+          <div class="m_info">
+            <li><a href="" class="scroll">MAFIA</a></li>
+  
+            <li class="lang">
+              <a href=""><i class="xi-telegram xi-1x"></i></a>
+              <a href=""><i class="xi-kakaotalk xi-1x"></i></a>
+              <a href=""><i class="xi-mail xi-1x"></i></a>
+              <a href=""><i class="xi-paper xi-1x"></i></a>
+              <a href="index_eng.html"><i class="xi-globus xi-1x"></i></a>
+            </li>
+          </div>
 
         </ul>
 
@@ -135,6 +137,11 @@
 
       </script>
 
+      <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+          }
+      </script>
     </div>
 
   </header>
@@ -190,7 +197,6 @@
     </script>
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script src="./js/rain.js"></script>
-
 
 </body>
 

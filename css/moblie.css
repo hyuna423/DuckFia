@@ -1,18 +1,59 @@
 
 /*데탑*/
 @media screen and (max-width:1440px) {
+  /* home */
+  #home .home_wrap {
+    width: 65%;
+  }
+  /* footer */
+  footer .f_wrap .f_ct .f_com {
+    width: 40%;
+  }
 }
 
 
 
 /*노트북*/
   @media screen and (max-width:1024px) {
+    /* header */
+    .xi-2x {
+      font-size: 1.7em;
+    }
+    .m_menu {
+      width: 40%;
+    }
+    /* home */
+    #home .home_wrap .home_txt h3 {
+      font-size: 1.4rem;
+    }
+    /* footer */
+    footer .f_wrap .f_ct h2 {
+      width: 20%;
+    }
 }
 
 
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
+    /* header */
+    .menu_icon {
+      width: 25%;
+    }
+    .m_menu ul li a {
+      font-size: 1.3em;
+    }
+    /* home */
+    #home .home_wrap {
+      width: 75%;
+    }
+    /* footer */
+    footer .f_wrap .f_ct {
+      padding: 0;
+    }
+    footer .f_wrap .f_ct .f_info {
+      width: 60%;
+    }
 }
 
 
@@ -20,7 +61,34 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
-
+  /* header */
+  .menu_icon {
+    width: 30%;
+  }
+  .m_menu {
+    width: 50%;
+  }
+  /* home */
+  #home .home_wrap {
+    width: 90%;
+  }
+  #home .home_wrap .home_txt h3 {
+    font-size: 1.3rem;
+  }
+  /* footer */
+  footer .f_wrap .f_ct {
+    flex-direction: column;
+  }
+  footer .f_wrap .f_ct .f_info {
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+  }
+  footer .f_wrap .f_ct .f_com {
+    width: 60%;
+    text-align: center;
+    margin-top: 2%;
+  }
 }
 
 
@@ -28,6 +96,23 @@
 
 
 @media screen and (max-width:576px) {
+  /* header */
+  hgroup h1 {
+    width: 75%;
+  }
+  .pc_menu ul {
+    justify-content: space-around;
+  }
+  .menu_icon {
+    width: 50%;
+  }
+  .m_menu {
+    width: 80%;
+  }
+  /* home */
+  #home .home_wrap .home_txt h3 {
+    font-size: 1.2rem;
+  }
 
 }
 
@@ -36,12 +121,42 @@
 /*모바일3 갤럭시*/
 
   @media screen and (max-width:425px) {
-
+    /* header */
+    hgroup h1 {
+      width: 90%;
+    }
+    .pc_menu ul {
+      display: none;
+    }
+    .m_menu {
+      width: 90%;
+    }
+    .m_menu ul .m_info {
+      display: block;
+    }
+    /* home */
+    #home .home_wrap .home_txt p {
+      font-size: 0.8rem;
+    }
+    #home .home_wrap .home_txt h3 {
+      font-size: 1rem;
+    }
+    /* footer */
+    footer .f_wrap .f_ct .f_com {
+      width: 100%;
+    }
 }
 
 
 
 /*모바일4 아이폰*/
     @media screen and (max-width:375px) {
-
+      /* header */
+      hgroup h1 {
+        width: 100%;
+      }
+      .m_menu {
+        width: 100%;
+        padding: 4% 12%;
+      }
 }

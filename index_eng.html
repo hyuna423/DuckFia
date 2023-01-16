@@ -96,10 +96,10 @@
 
       <!-- 헤더 햄버거메뉴 -->
 
-      <div class="m_menu_button">
-
-        <i class="xi-bars xi-3x"></i>
-
+      <div class="m_menu_button" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
 
       <nav class="m_menu">
@@ -113,6 +113,7 @@
           <li><a href="#roadmap" class="scroll">RoadMap</a></li>
 
           <!-- 모바일에서 나오는 항목들 -->
+          <div class="m_info">
           <li><a href="" class="scroll">MAFIA</a></li>
 
           <li class="lang">
@@ -122,7 +123,7 @@
             <a href=""><i class="xi-paper xi-1x"></i></a>
             <a href="index_eng.html"><i class="xi-globus xi-1x"></i></a>
           </li>
-
+          </div>
         </ul>
 
       </nav>
@@ -135,6 +136,12 @@
           });
         });
 
+      </script>
+
+      <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+          }
       </script>
 
     </div>
@@ -151,7 +158,9 @@
         <p>An era in which the world's cultural and artistic <br>
           industries have been extremely developed
         </p>
-        <h3>People gathered one by one to lead the future cultural center of the world, and <span>MAFIA</span>, a group that does not belong to anyone but exists in everything, was born
+        <h3>People gathered one by one to lead the <br>
+           future cultural center of the world, and <span>MAFIA</span>,<br>
+            a group that does not belong to anyone <br>but exists in everything, was born
         </h3>
       </div>
     </div>
