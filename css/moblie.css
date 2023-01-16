@@ -169,6 +169,10 @@
     width: 41%;
   }
 
+  .wallet_btn.nftcard {
+    width: 25%;
+  }
+
   /*roadmap*/
 
   .rdmp_cont_box {
@@ -259,6 +263,10 @@
   }
 
   /*nftcard*/
+
+  .wallet_btn.nftcard {
+    width: 40%;
+}
 
   #nftcard::after {
     width: 350px;
@@ -582,12 +590,18 @@
 
   .wallet_btn {
     display: none;
+
   }
 
   .wallet_btn2 {
     display: block;
     width: 50%;
     margin: 15% auto 0;
+  }
+
+  .wallet_btn.nftcard{
+    display: block;
+    width: 60%;
   }
 
 

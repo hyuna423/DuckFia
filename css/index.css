@@ -1210,7 +1210,7 @@ hgroup h1 img {
 
 .card_text {
   width: 100%;
-  margin-bottom: 8%;
+  margin-bottom: 5%;
 }
 
 .card_content {
@@ -1398,8 +1398,6 @@ hgroup h1 img {
 }
 
 
-
-
 .wallet_cont_left img {
   max-width: 100%;
 }
@@ -1415,6 +1413,11 @@ hgroup h1 img {
 .wallet_btn,
 .wallet_btn2 {
   width: 100%;
+}
+
+.wallet_btn.nftcard{
+  width: 16%;
+  margin-bottom: 5%;
 }
 
 .wallet_btn>button.shakeBox {
