@@ -108,7 +108,6 @@
   .dr
   /* home */
 
-
   #home .home_wrap .home_txt h3 {
     font-size: 1.4rem;
   }
@@ -200,8 +199,9 @@
 
   #home {
     background: url(../img/mob_991.jpg)no-repeat center;
-    background-size: contain;
+    background-size: cover;
   }
+
 
   #home .home_wrap::after {
     top: 70%;
@@ -461,7 +461,7 @@
   /* home */
   #home{
     background:url(../img/mob_576.jpg) no-repeat center;
-    background-size:contain;
+    background-size:cover;
   }
   #home .home_wrap .home_txt h3 {
     font-size: 1.2rem;
