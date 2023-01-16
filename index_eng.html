@@ -38,61 +38,130 @@
   <div class="rain front-row"></div>
   <div class="rain back-row"></div>
 
-  <script>
-    var makeItRain = function () {
-      //clear out everything
-      $('.rain').empty();
+<header>
 
-      var increment = 0;
-      var drops = "";
-      var backDrops = "";
+  <div class="head_all">
 
-      while (increment < 100) {
-        //couple random numbers to use for various randomizations
-        //random number between 98 and 1
-        var randoHundo = (Math.floor(Math.random() * (98 - 1 + 1) + 1));
-        //random number between 5 and 2
-        var randoFiver = (Math.floor(Math.random() * (5 - 2 + 1) + 2));
-        //increment
-        increment += randoFiver;
-        //add in a new raindrop with various randomizations to certain CSS properties
-        drops += '<div class="drop" style="left: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
-        backDrops += '<div class="drop" style="right: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.5' + randoHundo + 's;"></div></div>';
-      }
-
-      $('.rain.front-row').append(drops);
-      $('.rain.back-row').append(backDrops);
-    }
-
-    $('.splat-toggle.toggle').on('click', function () {
-      $('body').toggleClass('splat-toggle');
-      $('.splat-toggle.toggle').toggleClass('active');
-      makeItRain();
-    });
-
-    $('.back-row-toggle.toggle').on('click', function () {
-      $('body').toggleClass('back-row-toggle');
-      $('.back-row-toggle.toggle').toggleClass('active');
-      makeItRain();
-    });
-
-    $('.single-toggle.toggle').on('click', function () {
-      $('body').toggleClass('single-toggle');
-      $('.single-toggle.toggle').toggleClass('active');
-      makeItRain();
-    });
-
-    makeItRain();
-  </script>
+      <hgroup>
+          <a href="index_eng.html">
+              <h1><img src="img/DUCKFIA_LOGO.png" alt="logo"></h1>
+          </a>
+      </hgroup>
 
 
-  <!-- 🟡h3 빨강은 span으로 해주세요🟡-->
+      <nav class="pc_menu container">
+          <ul>
+              <div class="dropdown">
+                  <button onclick="myFunction1()" class="dropbtn">MAFIA</button>
+                  <div id="myDropdown" class="dropdown-content">
+                      <a href="#" onclick="return false;">NFT Mint Contest Event OTT<br>
+                          서비스 준비중입니다.</a>
+                  </div>
+              </div>
 
-  <main>
-    <!-- 🟡h3 빨강은 h3>span으로 해주세요🟡-->
+              <div class="menu_icon">
+                  <!-- 링크 -->
+                  <div class="dropdown2">
+                      <button onclick="myFunction2()"><i class="xi-link-insert xi-2x dropbtn2"></i></button>
+                      <div id="myDropdown2" class="dropdown-content2">
+                          <a href="#">Telegram</a>
+                          <a href="#">KaKaoTalk</a>
+                          <a href="#">Mail</a>
+                      </div>
+                  </div>
+
+                  <!-- 언어 -->
+                  <div class="dropdown3">
+                      <button onclick="myFunction3()"><i class="xi-globus xi-2x dropbtn3"></i></button>
+                      <div id="myDropdown3" class="dropdown-content3">
+                          <a href="index.html">Kor</a>
+                          <a href="index_eng.html">Eng</a>
+                      </div>
+                  </div>
+
+              </div>
+          </ul>
+      </nav>
+
+      <!-- 헤더 햄버거메뉴 -->
+
+
+
+      <nav class="m_menu">
+
+
+          <ul>
+
+            <li><a href="#project" class="scroll">DFA project</a></li>
+            <li><a href="#economy" class="scroll">Economy</a></li>
+            <li><a href="#nftcard" class="scroll">NFT Card</a></li>
+            <li><a href="#wallet" class="scroll">DFA Wallet</a></li>
+            <li><a href="#roadmap" class="scroll">RoadMap</a></li>
+
+              <!-- 모바일에서 나오는 항목들 -->
+              <div class="m_info">
+                  <li><a href="" class="mafia" onclick="return false;"                    
+                    >MAFIA</a></li>
+
+                  <li class="lang">
+                      <a href=""><i class="xi-telegram xi-1x"></i></a>
+                      <a href=""><i class="xi-kakaotalk xi-1x"></i></a>
+                      <a href=""><i class="xi-mail xi-1x"></i></a>
+                      <a href=""><i class="xi-paper xi-1x"></i></a>
+                      <a href="index_eng.html"><i class="xi-globus xi-1x"></i></a>
+                  </li>
+              </div>
+
+          </ul>
+
+
+      </nav>
+
+      <div class="m_menu_button" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+      </div>
+
+      <!--반응형 js-->
+      <script type="text/javascript">
+          $(function () {
+              $(".m_menu_button").click(function () {
+                  $(".m_menu").animate({ height: "toggle" }, 250);
+              });
+          });
+
+      </script>
+
+      <script>
+          function myFunction(x) {
+              x.classList.toggle("change");
+          }
+      </script>
+  </div>
+
+</header>
+
+<main>
+
+  <!-- home 시작 -->
+  <section id="home">
+    <div class="home_wrap container" data-aos="fade-down">
+      <div class="home_txt">
+        <p>An era in which the world's cultural and artistic <br>
+          industries have been extremely developed
+        </p>
+        <h3>People gathered one by one to lead the <br>
+           future cultural center of the world, and <span>MAFIA</span>,<br>
+            a group that does not belong to anyone <br>but exists in everything, was born
+        </h3>
+      </div>
+    </div>
+  </section><!-- home 끝 -->
+
     <!-- project -->
     <section id="project">
-      <div class="project_area container">
+      <div class="project_area container" data-aos="fade-down">
         <h3><span>DFA</span> Projects</h3>
         <p>The DFA project is a project that changes the ecosystem of the culture/art industry into a transparent and
           fair structure, and allows each participant to balance fair opportunities and profits.<br>
@@ -115,7 +184,7 @@
         <h4>Main Service</h4>
         <div class="eco_box_area">
 
-          <div class="eco_box">
+          <div class="eco_box"  data-aos="flip-left">
             <h5>Space for issuing NFT contents <br>(including promotion and trading functions)
             </h5>
             <p>
@@ -128,7 +197,7 @@
             </p>
           </div>
 
-          <div class="eco_box">
+          <div class="eco_box"  data-aos="flip-left">
             <h5>NFT Character Contest
             </h5>
             <p>
@@ -142,7 +211,7 @@
             </p>
           </div>
 
-          <div class="eco_box">
+          <div class="eco_box"  data-aos="flip-left">
             <h5>Sweepstakes event
             </h5>
             <p>
@@ -155,7 +224,7 @@
             </p>
           </div>
 
-          <div class="eco_box">
+          <div class="eco_box"  data-aos="flip-left">
             <h5>Streaming services
             </h5>
             <p>
@@ -194,7 +263,7 @@
         <div class="mafia_box">
 
           <div class="box_top">
-            <div class="ma_box flip">
+            <div class="ma_box flip" data-aos="flip-right">
               <div class="ma_box_card">
                 <div class="front">
                   <img src="img/GF.png" alt="god father">
@@ -206,7 +275,7 @@
               </div>
             </div>
 
-            <div class="ma_box flip">
+            <div class="ma_box flip" data-aos="flip-right">
               <div class="ma_box_card">
                 <div class="front">
                   <img src="img/CS.png" alt="Consigliere">
@@ -218,7 +287,7 @@
               </div>
             </div>
 
-            <div class="ma_box flip">
+            <div class="ma_box flip" data-aos="flip-right">
               <div class="ma_box_card">
                 <div class="front">
                   <img src="img/CG.png" alt="Capregime">
@@ -232,7 +301,7 @@
           </div>
 
           <div class="box_bottom">
-            <div class="ma_box flip">
+            <div class="ma_box flip" data-aos="flip-right">
               <div class="ma_box_card">
                 <div class="front">
                   <img src="img/ST.png" alt="Soldato">
@@ -245,7 +314,7 @@
               </div>
             </div>
 
-            <div class="ma_box flip">
+            <div class="ma_box flip" data-aos="flip-right">
               <div class="ma_box_card">
                 <div class="front">
                   <img src="img/CZ.png" alt="Citizen">
@@ -261,16 +330,179 @@
       </div>
     </section>
 
+      
+    <section id="nftcard">
+      <div class="nftcard_wrap container">
+        <h3><span>NFT</span>Card</h3>
+
+        <div class="card_text">
+          <p>It's a series of NFT works by DuckFia.<br>
+            Every time you open a character,
+            the type increases for each grade.<br>
+            NFT works are issued as ERC-721, so if you
+            purchase the NFT, you can fully own the NFT.
+          </p>
+        </div><!-- card_text -->
+
+
+        <div class="card_content">
+          <div class="card_up">
+            <div class="card1" data-aos="flip-left">
+              <img src="img/duckfia_nft1.png" alt="duckfia_nft1">
+            </div>
+            <div class="card2"data-aos="flip-left">
+              <img src="img/duckfia_nft2.png" alt="duckfia_nft2">
+            </div>
+          </div>
+         
+          <div class="card_down">
+            <div class="card3" data-aos="flip-left">
+              <img src="img/duckfia_nft3.png" alt="duckfia_nft3">
+            </div>
+            <div class="card4" data-aos="flip-left">
+              <img src="img/duckfia_nft4.png" alt="duckfia_nft4">
+            </div>
+          </div>
+        </div><!-- card_content -->
+       
+      </div><!-- nftcard_wrap -->
+    </section>
+
+
+    <section id="wallet">
+      <div class="wallet_dim"></div>
+      <div class="wallet_wrap container">
+        <div class="wallet_content">
+          <div class="wallet_cont_left" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500">
+            <img src="img/wallet.png" alt="wallet">
+          </div>
+
+          <div class="wallet_cont_right">
+            <h3><span>DFA</span> Wallet</h3>
+
+            <div class="wallet_btn">
+              <button class="shakeBox"><a href=""> Look around 
+                <i class="xi-arrow-right xi-x"></i>
+              </a></button>
+            </div>
+          </div><!-- wallet_cont_right -->
+
+          
+        
+  
+        </div><!-- wallet_content -->
+
+
+        <div class="wallet_btn2">
+          <button class="shakeBoxSecond"><a href=""> Look around 
+            <i class="xi-arrow-right xi-x"></i>
+          </a></button>
+        </div>
+      </div><!-- wallet_wrap -->
+    </section>
+
+
+
+    <section id="roadmap">
+      <div class="roadmap_wrap container">
+        <h3>Road<span>map</span></h3>
+
+        <div class="rdmp_content" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+          <div class="rdmp_cont_box box1">
+            <ul>2022</ul>
+            <li>Q3 DuckFia Team Recruitment <br>
+              Cultural industry, NFT combined planning
+            </li>
+            <li>
+              Q4 DuckFia Ltd. establish<br>
+              Whitepaper 1.0 <br>
+              Smart contract development <br>
+              DFA Wallet development begins
+            </li>  
+          </div>
+
+
+          <div class="rdmp_cont_box box2">
+            <ul>2023</ul>
+            <li>Q1 DFA Wallet Development<br>
+              Listed on overseas exchanges <br>
+              DFA community platform development begins <br>
+            </li>
+            <li>
+              Q2 Scheduled to open the first NFT character
+            </li>  
+            <li>
+              Q3 DFA community platform beta test<br>
+              NFT character 2nd opening planned
+            </li>  
+            <li>
+              Q4 DFA community platform officially open<br>
+              Plans for pilot operation of NFT content     
+            </li>  
+          </div>
+
+
+          <div class="rdmp_cont_box box3">
+            <ul>2024</ul>
+            <li>
+              Q1 NFT market place scheduled to open
+            </li>
+            <li>
+              Q2 Recruitment of DFA project partners (celebrity)<br>
+              OTT streaming service scheduled to open           
+            </li>  
+            <li>
+              Q3 Additional content to be published
+            </li>  
+            <li>
+              Q4 Expansion into the metaverse and fusion of DFA characters
+            </li>  
+          
+          </div>
+        </div><!-- rdmp_content -->
+      </div><!-- roadmap_wrap -->
+    </section>
 
   </main>
 
   <footer>
+    <div class="f_wrap container">
+      <div class="f_ct">
+        <h2> <a href="index_eng.html"><img src="./img/footer_logo.svg" alt="footer logo"></a></h2>
 
+        <div class="f_info">
+          <ul>
+            <li><b>CEO</b> xxx</li>
+            <li><b>서울시 강남구</b> xxxxxxx</li>
+            <li><b>Customer Center</b> AM 9:00 – PM 6:00</li>
+            <li><b>Contact Partnerships and Affiliations DuckFia@이메일</b></li>
+          </ul>
+        </div>
+
+        <div class="f_com">
+          <div class="sns_btn">
+          <p><a href=""><i class="xi-telegram xi-3x"></i></a></p>
+          <p><a href=""><i class="xi-kakaotalk xi-3x"></i></a></p>
+          <p><a href=""><i class="xi-mail xi-3x"></i></a></p>
+          <p><a href=""><i class="xi-paper xi-3x"></i></a></p>
+          </div>
+        </div>
+      </div>
+
+      <p class="warning">DuckFia Ltd. is responsible for coin issuance, platform development and operation, NFT development, and exchange listing promotion and management.</p>
+    </div>
   </footer>
 
   <script>
     AOS.init();
   </script>
+<script src="js/btn.js"></script>
+<script src="js/rain.js"></script>
+<script src="js/dropdown.js"></script>
+
 
 </body>
 

@@ -36,15 +36,129 @@
 
 <body>
 
-  <!-- 🟡h3 빨강은 h3>span으로 해주세요🟡-->
+  <div class="rain front-row"></div>
+  <div class="rain back-row"></div>
 
+    <header>
+
+      <div class="head_all">
+
+          <hgroup>
+              <a href="index.html">
+                  <h1><img src="img/DUCKFIA_LOGO.png" alt="logo"></h1>
+              </a>
+          </hgroup>
+
+
+          <nav class="pc_menu container">
+              <ul>
+                  <div class="dropdown">
+                      <button onclick="myFunction1()" class="dropbtn">MAFIA</button>
+                      <div id="myDropdown" class="dropdown-content">
+                          <a href="#">NFT Mint Contest Event OTT<br>
+                              서비스 준비중입니다.</a>
+                      </div>
+                  </div>
+
+                  <div class="menu_icon">
+                      <!-- 링크 -->
+                      <div class="dropdown2">
+                          <button onclick="myFunction2()"><i class="xi-link-insert xi-2x dropbtn2" style="transform: rotate(45deg);"></i></button>
+                          <div id="myDropdown2" class="dropdown-content2">
+                              <a href="#">Telegram</a>
+                              <a href="#">KaKaoTalk</a>
+                              <a href="#">Mail</a>
+                          </div>
+                      </div>
+
+                      <!-- 언어 -->
+                      <div class="dropdown3">
+                          <button onclick="myFunction3()"><i class="xi-globus xi-2x dropbtn3"></i></button>
+                          <div id="myDropdown3" class="dropdown-content3">
+                              <a href="index.html">Kor</a>
+                              <a href="index_eng.html">Eng</a>
+                          </div>
+                      </div>
+
+                  </div>
+              </ul>
+          </nav>
+
+          <!-- 헤더 햄버거메뉴 -->
+
+
+
+          <nav class="m_menu">
+
+
+              <ul>
+
+                  <li><a href="#project" class="scroll">DFA project</a></li>
+                  <li><a href="#economy" class="scroll">Economy</a></li>
+                  <li><a href="#nftcard" class="scroll">NFT Card</a></li>
+                  <li><a href="#wallet" class="scroll">DFA Wallet</a></li>
+                  <li><a href="#roadmap" class="scroll">RoadMap</a></li>
+
+                  <!-- 모바일에서 나오는 항목들 -->
+                  <div class="m_info">
+                      <li><a href="" class="scroll">MAFIA</a></li>
+
+                      <li class="lang">
+                          <a href=""><i class="xi-telegram xi-1x"></i></a>
+                          <a href=""><i class="xi-kakaotalk xi-1x"></i></a>
+                          <a href=""><i class="xi-mail xi-1x"></i></a>
+                          <a href=""><i class="xi-paper xi-1x"></i></a>
+                          <a href="index_eng.html"><i class="xi-globus xi-1x"></i></a>
+                      </li>
+                  </div>
+
+              </ul>
+
+
+          </nav>
+
+          <div class="m_menu_button" onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+          </div>
+
+          <!--반응형 js-->
+          <script type="text/javascript">
+              $(function () {
+                  $(".m_menu_button").click(function () {
+                      $(".m_menu").animate({ height: "toggle" }, 250);
+                  });
+              });
+
+          </script>
+
+          <script>
+              function myFunction(x) {
+                  x.classList.toggle("change");
+              }
+          </script>
+      </div>
+
+  </header>
 
 
   <main>
-    <!-- 🟡h3 빨강은 h3>span으로 해주세요🟡-->
+  <!-- home 시작 -->
+  <section id="home">
+    <div class="home_wrap container" data-aos="fade-down">
+        <div class="home_txt">
+            <p>세계적으로 문화, 예술 산업이 극도로 발전한 시대<br>
+                세계미래의 문화중심을 이끌기 위해 하나둘씩 사람들이 모였고,</p>
+            <h3>어디에도 속하지 않지만 모든 것에 존재하는 그룹<br>
+                <span>MAFIA</span> 가 탄생했다.
+            </h3>
+        </div>
+    </div>
+</section><!-- home 끝 -->
     <!-- project -->
     <section id="project">
-      <div class="project_area container">
+      <div class="project_area container" data-aos="fade-down">
         <h3><span>DFA</span> Projects</h3>
         <p>DFA 프로젝트는 문화 / 예술 산업의 생태계를 투명하고 공정한 구조로 변경하고, <br>
           각각의 참여자의 공정한 기회와 수익의 균형을 바로잡을 수 있도록 하는 프로젝트입니다.<br>
@@ -65,7 +179,7 @@
         <h4>Main Service</h4>
         <div class="eco_box_area">
 
-          <div class="eco_box">
+          <div class="eco_box"  data-aos="flip-left">
             <h5>NFT 콘텐츠 발행 공간<br>
               (홍보 및 거래 기능 포함)</h5>
             <p>
@@ -83,7 +197,7 @@
             </p>
           </div>
 
-          <div class="eco_box">
+          <div class="eco_box"  data-aos="flip-left">
             <h5>NFT 캐릭터 콘테스트</h5>
             <p>
               두번째로, NFT 캐릭터 콘테스트 공간으로
@@ -97,7 +211,7 @@
             </p>
           </div>
 
-          <div class="eco_box">
+          <div class="eco_box"  data-aos="flip-left">
             <h5>경품 이벤트</h5>
             <p>
               세번째로 마피아는 경품, 에어드랍 이벤트
@@ -110,7 +224,7 @@
             </p>
           </div>
 
-          <div class="eco_box">
+          <div class="eco_box"  data-aos="flip-left">
             <h5>스트리밍 서비스</h5>
             <p>
               마지막으로 무료/유료 스트리밍 서비스
@@ -134,7 +248,7 @@
 
     <section id="mafia">
       <div class="mafia_area container">
-        <div class="maf_txt">
+        <div class="maf_txt" data-aos="fade-down">
           <h3><span>MAFIA</span>등급</h3>
           <p>DuckFia 플랫폼에는 관리자급에 해당하는 대부, 콘실리에리, 카포레짐, 솔다토 와 카드를 소유하고 있지 않은 일반 시민 등 총 5개의 계급이 존재합니다. <br>
             NFT 캐릭터 카드의 개수와 종류에 따라 계급이 구분되며, 각 계급에 따라 플랫폼에서 활동할 수 있는 영역과 역할이 구분됩니다.
@@ -144,7 +258,7 @@
         <div class="mafia_box">
 
           <div class="box_top">
-            <div class="ma_box flip">
+            <div class="ma_box flip" data-aos="flip-right">
               <div class="ma_box_card">
                 <div class="front">
                   <img src="img/GF.png" alt="god father">
@@ -156,7 +270,7 @@
               </div>
             </div>
 
-            <div class="ma_box flip">
+            <div class="ma_box flip" data-aos="flip-right">
               <div class="ma_box_card">
                 <div class="front">
                   <img src="img/CS.png" alt="Consigliere">
@@ -168,7 +282,7 @@
               </div>
             </div>
 
-            <div class="ma_box flip">
+            <div class="ma_box flip" data-aos="flip-right">
               <div class="ma_box_card">
                 <div class="front">
                   <img src="img/CG.png" alt="Capregime">
@@ -181,7 +295,7 @@
           </div>
 
           <div class="box_bottom">
-            <div class="ma_box flip">
+            <div class="ma_box flip" data-aos="flip-right">
               <div class="ma_box_card">
                 <div class="front">
                   <img src="img/ST.png" alt="Soldato">
@@ -194,7 +308,7 @@
               </div>
             </div>
 
-            <div class="ma_box flip">
+            <div class="ma_box flip" data-aos="flip-right">
               <div class="ma_box_card">
                 <div class="front">
                   <img src="img/CZ.png" alt="Citizen">
@@ -209,16 +323,177 @@
         </div>
       </div>
     </section>
+
+    <section id="nftcard">
+      <div class="nftcard_wrap container">
+        <h3><span>NFT</span>Card</h3>
+
+        <div class="card_text">
+          <p>DuckFia에서 만들어진 NFT 작품 시리즈 입니다.<br>
+            캐릭터 오픈 때 마다 각각 등급별로 종류가 늘어납니다.<br>
+             NFT 작품은 ERC-721로 발행되어, 해당 NFT를 구매한 경우<br>
+             해당 NFT를 온전히 소유할 수 있습니다.</p>
+        </div><!-- card_text -->
+
+
+        <div class="card_content">
+          <div class="card_up">
+            <div class="card1" data-aos="flip-left">
+              <img src="img/duckfia_nft1.png" alt="duckfia_nft1">
+            </div>
+            <div class="card2"data-aos="flip-left">
+              <img src="img/duckfia_nft2.png" alt="duckfia_nft2">
+            </div>
+          </div>
+         
+          <div class="card_down">
+            <div class="card3" data-aos="flip-left">
+              <img src="img/duckfia_nft3.png" alt="duckfia_nft3">
+            </div>
+            <div class="card4" data-aos="flip-left">
+              <img src="img/duckfia_nft4.png" alt="duckfia_nft4">
+            </div>
+          </div>
+        </div><!-- card_content -->
+       
+      </div><!-- nftcard_wrap -->
+    </section>
+
+
+    <section id="wallet">
+      <div class="wallet_dim"></div>
+      <div class="wallet_wrap container">
+        <div class="wallet_content">
+          <div class="wallet_cont_left" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500">
+            <img src="img/wallet.png" alt="wallet">
+          </div>
+
+          <div class="wallet_cont_right">
+            <h3><span>DFA</span> Wallet</h3>
+
+            <div class="wallet_btn">
+              <button class="shakeBox"><a href=""> Look around 
+                <i class="xi-arrow-right xi-x"></i>
+              </a></button>
+            </div>
+          </div><!-- wallet_cont_right -->
+
+          
+        
+  
+        </div><!-- wallet_content -->
+
+
+        <div class="wallet_btn2">
+          <button class="shakeBoxSecond"><a href=""> Look around 
+            <i class="xi-arrow-right xi-x"></i>
+          </a></button>
+        </div>
+      </div><!-- wallet_wrap -->
+    </section>
+
+
+
+    <section id="roadmap">
+      <div class="roadmap_wrap container">
+        <h3>Road<span>map</span></h3>
+
+        <div class="rdmp_content" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+          <div class="rdmp_cont_box box1">
+            <ul>2022</ul>
+            <li>Q3 DuckFia 팀 모집 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp; 문화산업, NFT
+            </li>
+            <li>
+              Q4 DuckFia Ltd. 설립 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whitepaper 1.0 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;스마트 컨트랙트 개발 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DFA Wallet 개발 시작
+            </li>  
+          </div>
+
+
+          <div class="rdmp_cont_box box2">
+            <ul>2023</ul>
+            <li>Q1 DFA Wallet 개발 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;해외 거래소 상장 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DFA 커뮤니티 플랫폼 개발 시작 <br>
+            </li>
+            <li>
+              Q2 NFT 캐릭터 1차 오픈 예정
+            </li>  
+            <li>
+              Q3 DFA 커뮤니티 플랫폼 베타 테스트 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NFT 캐릭터 2차 오픈 예정
+            </li>  
+            <li>
+              Q4 DFA 커뮤니티 플랫폼 정식 오픈 예정 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NFT 콘텐츠 시범 운영 예정
+            </li>  
+           
+          </div>
+
+
+          <div class="rdmp_cont_box box3">
+            <ul>2024</ul>
+            <li>
+              Q1 NFT 마켓 플레이스 오픈 예정
+            </li>
+            <li>
+              Q2 DFA 프로젝트 파트너 모집 (셀럽) <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OTT 스트리밍 서비스 오픈 예정
+            </li>  
+            <li>
+              Q3 추가 콘텐츠 발행 예정
+            </li>  
+            <li>
+              Q4 메타버스로 확장 및 DFA 캐릭터 융화
+            </li>  
+           
+          </div>
+        </div><!-- rdmp_content -->
+      </div><!-- roadmap_wrap -->
+    </section>
   </main>
 
   <footer>
+    <div class="f_wrap container">
+        <div class="f_ct">
+            <h2> <a href="index.html"><img src="./img/footer_logo.svg" alt="footer logo"></a></h2>
 
-  </footer>
+            <div class="f_info">
+                <ul>
+                    <li><b>대표이사</b> xxx</li>
+                    <li><b>서울시 강남구</b> xxxxxxx</li>
+                    <li><b>고객센터</b> AM 9:00 – PM 6:00</li>
+                    <li><b>파트너십 및 제휴 문의</b></li>
+                </ul>
+            </div>
+
+            <div class="f_com">
+                <div class="sns_btn">
+                    <p><a href=""><i class="xi-telegram xi-3x"></i></a></p>
+                    <p><a href=""><i class="xi-kakaotalk xi-3x"></i></a></p>
+                    <p><a href=""><i class="xi-mail xi-3x"></i></a></p>
+                    <p><a href=""><i class="xi-paper xi-3x"></i></a></p>
+                </div>
+            </div>
+        </div>
+
+        <p class="warning">DuckFia Ltd.는 코인발행, 플랫폼 개발 및 운영, NFT 개발 ,거래소 상장 추진 및 관리에 관한 업무를 진행하고 있습니다.</p>
+    </div>
+</footer>
 
   <script>
     AOS.init();
   </script>
 
+<script src="js/btn.js"></script>
+<script src="js/rain.js"></script>
+<script src="js/dropdown.js"></script>
 
 </body>
 

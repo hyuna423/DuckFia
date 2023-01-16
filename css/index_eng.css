@@ -25,6 +25,13 @@ address {
   width: 100%;
 }
 
+/* roadmap */
+
+.rdmp_cont_box {
+  font-size: 0.9em;
+  padding: 2% 1.5%;
+}
+
 
 
 /*데탑*/
@@ -39,6 +46,18 @@ address {
   #mafia .mafia_area .maf_txt p {
     width: 62%;
   }
+
+  /*roadmap*/
+
+  .rdmp_content {
+    justify-content: space-between;
+  }
+
+  .rdmp_cont_box {
+    width: 32%;
+    font-size: 12px;
+  }
+
 
 }
 
@@ -56,6 +75,15 @@ address {
   #mafia .mafia_area .maf_txt p {
     width: 100%;
   }
+
+
+  /*roadmap*/
+
+  .rdmp_cont_box {
+    width: 30%;
+    height: 285px;
+  }
+
 }
 
 
@@ -68,13 +96,30 @@ address {
   #economy .economy_area .eco_box_area .eco_box:nth-child(4) h5 {
     margin-bottom: 59px;
   }
+
+  /*roadmap*/
+
+  .rdmp_cont_box {
+    width: 40%;
+    padding: 2%;
+    height: 305px;
+  }
+
+
 }
 
 
 
 /*모바일*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+     /*roadmap*/
+
+     .rdmp_cont_box {
+      width:53%;
+      padding: 2.5%;
+    }
+}
 
 
 /*모바일2*/
@@ -87,13 +132,25 @@ address {
   #economy .economy_area .eco_box_area .eco_box:nth-child(4) h5 {
     margin-bottom: 20px;
   }
+
+  .rdmp_cont_box {
+    width: 80%;
+    padding: 5%;
+  }
 }
 
 
 
 /*모바일3 갤럭시*/
 
-@media screen and (max-width:425px) {}
+@media screen and (max-width:425px) {
+    /*roadmap*/
+
+    
+    #roadmap::after{
+      left: -6%;
+    }
+}
 
 
 
