@@ -286,7 +286,7 @@ hgroup h1 img {
   color: #fff;
 }
 
-.m_menu ul li a.mafia{
+.m_menu ul li a.mafia, .m_menu ul li a.mafia_en{
   position: relative;
 }
 
@@ -303,7 +303,24 @@ hgroup h1 img {
   transition: .3s;
 }
 
+.m_menu ul li a.mafia_en::before{
+  content: 'Service is being prepared.';
+  position: absolute;
+  display: none;
+  width: 130%;
+  height: 100%;
+  font-size: .5rem;
+  color: #FF002b;
+  top: 5px;
+  left: 105%;
+  transition: .3s;
+}
+
 .m_menu ul li a.mafia:hover::after{
+  display: block;
+}
+
+.m_menu ul li a.mafia_en:hover::before{
   display: block;
 }
 
