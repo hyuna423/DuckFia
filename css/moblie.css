@@ -5,6 +5,9 @@
   #home .home_wrap {
     width: 65%;
   }
+  .m_menu {
+    right: -149px;
+  }
 
   /* footer */
   footer .f_wrap .f_ct .f_com {
