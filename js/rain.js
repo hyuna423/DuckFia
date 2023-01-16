@@ -21,24 +21,7 @@ var makeItRain = function () {
 
   $('.rain.front-row').append(drops);
   $('.rain.back-row').append(backDrops);
-}
+};
 
-$('.splat-toggle.toggle').on('click', function () {
-  $('body').toggleClass('splat-toggle');
-  $('.splat-toggle.toggle').toggleClass('active');
-  makeItRain();
-});
-
-$('.back-row-toggle.toggle').on('click', function () {
-  $('body').toggleClass('back-row-toggle');
-  $('.back-row-toggle.toggle').toggleClass('active');
-  makeItRain();
-});
-
-$('.single-toggle.toggle').on('click', function () {
-  $('body').toggleClass('single-toggle');
-  $('.single-toggle.toggle').toggleClass('active');
-  makeItRain();
-});
 
 makeItRain();
