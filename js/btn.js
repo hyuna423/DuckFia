@@ -15,6 +15,9 @@ const observer = new IntersectionObserver (
 
 observer.observe(shakeBox);
 
+// 
+
+
 
 
 
@@ -33,3 +36,4 @@ const observerSecond = new IntersectionObserver (
 );
 
 observerSecond.observe(ShakeBoxSecond);
+4fk
