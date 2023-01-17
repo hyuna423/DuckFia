@@ -77,6 +77,37 @@ body.back-row-toggle .rain.back-row {
   }
 }
 
+
+.splat {
+  width: 15px;
+  height: 10px;
+  border-top: 2px dotted rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  opacity: 1;
+  transform: scale(0);
+  animation: splat 0.5s linear infinite;
+  display: block;
+}
+
+@keyframes splat {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  90% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
 .stem {
   width: 1px;
   height: 60%;
@@ -1229,6 +1260,37 @@ display: block;
     opacity: 1;
   }
 }
+
+
+.wallet_btn.nftcard>button.shakeBoxNft {
+  background-color: rgba(82, 7, 7, .5);
+  border: 1px solid #FF002B;
+  width: 100%;
+  animation-duration: 1s;
+}
+
+@keyframes shakeBoxNft {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  25% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(4deg);
+  }
+
+  75% {
+    transform: rotate(-4deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 
 
 

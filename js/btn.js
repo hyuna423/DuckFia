@@ -17,6 +17,27 @@ observer.observe(shakeBox);
 
 
 
+/*nftcard btn*/
+
+const shakeBoxNft = document.querySelector('.shakeBoxNft');
+
+
+const observerNft = new IntersectionObserver (
+    ([entry]) => {
+        shakeBoxNft.style.animationName = entry.isIntersecting ? "shakeBoxNft" : "none";
+    },
+    {
+        threshold : 1,
+    }
+);
+
+observerNft.observe(shakeBoxNft);
+
+
+
+
+
+
 
 /*shakeBox모바일*/
 
