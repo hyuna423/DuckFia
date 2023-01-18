@@ -182,33 +182,8 @@ hgroup h1 img {
   align-items: center;
 }
 
-.menu_icon {
-  width: 20%;
-  display: inline-flex;
-  justify-content: space-evenly;
-}
 
-.menu_icon a {
-  display: inline-block;
-  margin: 5%;
-  background: #fff;
-  border-radius: 500px;
-  padding: 13% 20%;
-  transition: all 0.3s ease-in-out;
-}
 
-.menu_icon a:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-}
-
-.menu_icon p {
-  margin: 0;
-}
-
-.menu_icon a:last-child {
-  margin-right: 0 !important;
-}
 
 /* 메뉴_마피아 */
 
@@ -367,6 +342,30 @@ hgroup h1 img {
 }
 
 /* dropbtn */
+
+
+.dropDownAll li.active{
+  /*   background-color: #ffffff; */
+  /*   border-color: #000;
+    color: #000000; */
+  }
+  
+  .dropDownAll li.active::after {
+    display: block;
+  }
+  
+  .dropDownAll li.active > div{
+    display: block;
+  }
+  
+
+  .dropdown2{
+    margin: 0 3% 0 1%;
+  }
+
+  .dropdown3{
+    margin-right: 3%;
+  }
 
 .dropbtn,
 .dropbtn2,
