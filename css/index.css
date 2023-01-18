@@ -508,6 +508,7 @@ hgroup h1 img {
 .dropdown-content3 a:hover {
   color: #FF002B;
   border-radius: 15px;
+
 }
 
 .dropdown-content a:hover::after {
@@ -516,7 +517,8 @@ display: block;
 
 
 .dropdown a:hover {
-  background-color: #f1f1f1
+  background-color: #f1f1f1;
+  border-radius:30px;
 }
 
 .show {
