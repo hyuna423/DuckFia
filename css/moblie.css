@@ -134,9 +134,9 @@
 
   #economy::before {
     width: 80%;
-    height: 100%;
-  }
-
+    height: 52%;
+}
+}
   #economy .economy_area .eco_box_area .eco_box h5 {
     font-size: 1rem;
   }
@@ -379,8 +379,8 @@
 
   /* economy */
   #economy .economy_area::before {
-    height: 20%;
-  }
+    height: 10%;
+}
 
   /* mafia */
   #mafia .mafia_area .mafia_box .box_bottom .ma_box {
@@ -506,7 +506,7 @@
 
   #economy::before {
     width: 95%;
-    height: 100%;
+    height: 20%;
   }
 
   /* mafia */
